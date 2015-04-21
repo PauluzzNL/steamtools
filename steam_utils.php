@@ -49,7 +49,6 @@ function steam64toID($steam64ID){
 	return 'STEAM_0:'.$iServer.':'.$steamID;
 }
 
-$dta =  steamIDto64('STEAM_0:1:24587308');
-$dtaRev = steam64toID($dta);
-var_dump($dta);
-var_dump($dtaRev);
+// Example
+$longSteamID =  steamIDto64('STEAM_0:1:123456789');
+$shortSteamID = steam64toID($longSteamID);
